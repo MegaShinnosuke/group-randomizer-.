@@ -184,7 +184,7 @@ function makeGroups(){
   const labels="ABCDEFGHIJKLMNOPQRSTUVWXYZ"; const now=new Date();
   const dateStr=now.toLocaleDateString("ja-JP",{year:"2-digit",month:"2-digit",day:"2-digit"})+" "+now.toTimeString().slice(0,5);
   const stars="☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆☆"; let output=stars+"\n";
-  output+=`${dateStr} 時点\n※左の人から貼っていこー！\n\n`;
+  output+=`${dateStr} 時点\！\n\n`;
   groups.forEach((g,i)=>{ output+=`ｸﾞﾙｰﾌﾟ${labels[i]}（${g.length}人）：${g.join("、")}\n-------------------------------\n`; });
   output+="\n"+stars;
 
